@@ -1,0 +1,480 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.header{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/graduation.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+.header h1 {
+    font-size: 40px;
+    margin: 50px;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-headding a img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding-right: -50px;
+}
+
+
+
+.nav-lists {
+    flex: 1;
+    align-items: center;
+}
+
+.nav-lists ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-lists ul li {
+    text-align: left;
+}
+
+.nav-lists ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.nav-lists ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.8s;
+
+}
+
+.nav-lists ul li a:hover:after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 63px;
+}
+
+.text-box p {
+    margin: 20px 0 40px;
+    text-align: justify;
+    text-align: center;
+}
+
+.text-box a {
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-size: 15px;
+
+}
+
+.text-box a:hover {
+    color: rgb(251, 251, 253);
+    background-color: rgb(184, 48, 48);
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+                                                    /* course */
+.course {
+    text-align: center;
+    margin: 60px 0px;
+}
+
+.course h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.course p {
+    font-size: 13px;
+    color: rgb(97, 97, 73);
+}
+
+.row {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 2px solid rgb(230, 228, 228);
+    transition: 0.5s;
+    padding: 20px 12px;
+    margin-top: 50px;
+}
+
+.column p {
+    text-align: justify;
+}
+
+.column h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+    color: black;
+}
+
+.column:hover {
+    box-shadow: 0 0 200px 0 rgba(48, 32, 32, 0.2);
+}
+
+
+/* campus */
+
+.campus {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 15px;
+
+}
+
+.campus h1 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.campus-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.campus-column {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.campus-column img {
+    width: 100%;
+    border-radius: 10px;
+    width: 550px;
+    height: 400px;
+    display: block;
+}
+
+.campus-column .layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transition: 0.8s;
+}
+
+.layer:hover {
+    background: rgb(210, 0, 0, 0.7);
+}
+
+.layer h3 {
+    font-size: 18px;
+    margin-bottom: 0px;
+    color: white;
+}
+ 
+                                            /* contact */
+
+
+.about {
+    background-color: rgb(50, 50, 92);
+    width: 100%;
+    color: white;
+
+}
+
+.about-us {
+    padding: 15px;
+    width: 50%;
+}
+
+.about-us h3 {
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.location i {
+    float: left;
+}
+
+.adderes {
+    margin-top: 15px;
+}
+
+.logo ul li i {
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    margin-left: 15px;
+
+}
+
+.logo ul li {
+    display: flex;
+}
+
+.logo ul {
+    display: flex;
+    margin: 10px 5px;
+    padding-bottom: 20px;
+    list-style-type: none;
+}
+
+.footer {
+    background-color: rgb(26, 26, 53);
+    padding: 20px 25px;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-lists ul li {
+        display: block;
+    }
+
+    .nav-lists ul {
+        text-align: center;
+    }
+
+    .nav-lists {
+        position: absolute;
+        background: rgb(184, 48, 48);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa-solid {
+        display: block;
+        color: white;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .nav-lists ul {
+        padding: 30px;
+    }
+
+    .nav-lists ul li a::after {
+        transition: 1s;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .campus-row {
+
+        flex-direction: column;
+    }
+}
+
+                          /* About Us page */
+
+.sub-header {
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(graduation.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    margin-bottom: 0%;
+}
+
+.sub-header h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.nav-lists ul {
+    text-align: right;
+}
+
+.largest-university {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 5px;
+
+}
+
+.university-row {
+    display: flex;
+}
+
+.university-column {
+    flex-basis: 48%;
+    padding: 25px 15px;
+}
+
+.university-column p {
+    margin-top: 15px;
+    text-align: justify;
+    text-indent: 2em;
+    margin-bottom: 15px;
+}
+
+.university-column h1 {
+    font-size: 32px;
+}
+
+
+.university-column img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.university-column a {
+    padding: 10px 25px;
+    border: 1px solid red;
+    color: red;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 10px;
+    transition: 0.5s;
+}
+
+.university-column a:hover {
+    color: white;
+    background-color: red;
+}
+
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0px;
+}
+
+ .location  iframe{
+    width: 100%;
+ }
+ .details{
+    width: 80%;
+    margin: auto;
+    
+ }
+ .row-det {
+    margin-bottom: 55px;
+    flex-basis: 48%;
+    
+ }
+ .details .row-det div {
+    margin-bottom: 40px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+ }
+
+ .details .row-det div .fa {
+    margin-right: 15px;
+    color: orangered;
+    font-style: 50px;
+ }
+
+ .details .row-det div h3 {
+    font-weight: 5000;
+    margin-bottom: 5px;
+ }
+
+ .details .row-det div p {
+     font-weight: 50;
+ }
+
+
+
+
+ .comment-box {
+     border: solid 2px black;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     padding: 10px 20px;
+     border: none;
+
+ }
+
+ .comment-box h3 {
+     text-align: left;
+ }
+
+ .comment-box input,
+ textarea {
+     border: solid 0.5px rgb(131, 129, 129) ;
+     background-color: rgb(236, 234, 234);
+     width: 100%;
+     box-sizing: border-box;
+     padding: 5px;
+     margin-top: 20px;
+     
+ }
+
+ .comment-box button {
+     padding: 10px;
+     margin: 15px;
+     color: rgb(180, 100, 76);
+     background-color: white;
+     border: none;
+     border: solid 1px;
+ }
+
+ .comment-box button:hover {
+    color: white;
+    background-color: orangered;
+ }

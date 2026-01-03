@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSU</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="sub-headding">
+                <a href=""><img src="image/logo.jpg"></a>
+
+            </div>
+
+            <div class="nav-lists" id="navlink">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="University.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOGS</a></li>
+                    <li><a href="contact.html">CONTACTS</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenue()"></i>
+        </nav>
+        <h1>Contacts</h1>
+    </section>
+    
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.4452638002535!2d78.7464809!3d10.929699200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf70ca2847e99%3A0xcf6f7bb049ba92a6!2sDHANALAKSHMI%20SRINIVASAN%20UNIVERSITY!5e0!3m2!1sen!2sin!4v1742316693032!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="details">
+        <div class="row-det">
+            <div class="address">
+                <i class="fa fa-home"></i>
+                <span>
+                    <h3>NH-45, Trichy Chennai Trunk Road Samayapuram</h3>
+                    <p>Tiruchirappalli, Tamil Nadu 621112</p>
+                </span>
+            </div>
+            <div class="phone">
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h3>1800-5322-222</h3>
+                    <p>Monday to Saturday, 10AM to 6PM </p>
+                </span>
+            </div>
+            <div class="email">
+                <i class=" fa fa-solid fa-envelope"></i>
+                <span>
+                    <h3>enquiry@dsuniversity.ac.in</h3>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="column-det">
+            <div class="comment-box">
+                
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter  Name" required>
+                    <input type="email" placeholder="Enter Email" required>
+                    <input type="text" placeholder="Enter your subject" required>
+
+                    <textarea name="" rows="5" placeholder="Message" id=""></textarea>
+                    <button type="submit" class="sub-button"> Send Message</button>
+                </form>
+            </div>
+                
+            
+        </div>
+    </section>
+
+
+    <section class="about">
+        <div class="about-us">
+            <h3>Contact Us</h3>
+            <div class="contact">
+                <div class="location">
+                    <div class="adderes">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>&nbsp;&nbsp;&nbsp;NH-45, Trichy Chennai Trunk Road,
+                            Samayapuram (Near Samayapuram Toll Plaza),
+                            Tiruchirappalli - 621 112.
+                            Tamil Nadu,
+                            India.</p>
+                    </div>
+                    <div class="adderes">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>&nbsp;&nbsp;&nbsp;TollFreeNumber:1800-5322-222</p>
+                    </div>
+                    <div class="adderes">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <p>&nbsp;&nbsp;&nbsp;+91 70944 58021 | 70944 58022</p>
+                    </div>
+                    <div class="adderes">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>&nbsp;&nbsp;&nbsp;bspenquiry@dsuniversity.ac.in</p>
+                    </div>
+                    <div class="adderes">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <p>&nbsp;&nbsp;&nbsp; www.dsuniversity.ac.in</p>
+                    </div>
+
+                </div>
+                <div class="logo">
+                    <ul>
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                        <li><i class="fa-brands fa-whatsapp"></i></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="external">
+
+        </div>
+        <div class="footer">
+            <p>© Copyright 2024 - All Rights Reserved | Designed & Maintained by DSU - Trichy</p>
+        </div>
+
+    </section>
+
+
+    <!--JAVA SCRIPT -->
+    <script>
+        var navlink = document.getElementById("navlink");
+        function showMenue() {
+            navlink.style.right = "0";
+        }
+        function hideMenu() {
+            navlink.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
